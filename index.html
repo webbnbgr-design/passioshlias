@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ΠΑΣΣΙΟΣ ΗΛΙΑΣ | Λογιστικό Γραφείο - Μεσολόγγι</title>
+    <meta name="description" content="Επαγγελματικές λογιστικές και φοροτεχνικές υπηρεσίες στο Μεσολόγγι. Συνέπεια, αξιοπιστία και 5.0/5 αστέρια στην Google.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0F172A',
+                            accent: '#1E293B',
+                            primary: '#2563EB',
+                            silver: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                        display: ['Montserrat', 'Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '3xl': '1.5rem',
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+    </style>
+</head>
+<body class="bg-brand-silver text-brand-dark antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="font-display font-extrabold text-xl tracking-tight text-brand-primary">ΠΑΣΣΙΟΣ ΗΛΙΑΣ</span>
+                <span class="hidden sm:inline text-slate-400 font-light ml-2">|</span>
+                <span class="hidden sm:inline text-slate-500 text-sm font-medium uppercase tracking-widest ml-1">Λογιστικό Γραφείο</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#services" class="hover:text-brand-primary transition-colors">Υπηρεσίες</a>
+                <a href="#about" class="hover:text-brand-primary transition-colors">Το Γραφείο</a>
+                <a href="#contact" class="hover:text-brand-primary transition-colors text-brand-primary bg-brand-primary/5 px-4 py-2 rounded-full">Επικοινωνία</a>
+            </div>
+
+            <a href="tel:2631028448" id="nav-cta" class="bg-brand-dark text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-slate-800 transition-all shadow-lg shadow-slate-200 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                26310 28448
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Abstract Background -->
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#1E3A8A;stop-opacity:0" />
+                    </linearGradient>
+                </defs>
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="url(#grad1)" transform="rotate(180 50 50)" />
+            </svg>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 mb-8 animate-fade-in">
+                <div class="flex gap-0.5 text-yellow-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <span class="text-white/90 text-xs font-bold uppercase tracking-widest">5.0/5 Google Reviews</span>
+            </div>
+
+            <h1 class="font-display text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight text-balance">
+                Επαγγελματισμός & <br>
+                <span class="text-brand-primary">Απόλυτη Εμπιστοσύνη</span>
+            </h1>
+            
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                Το λογιστικό γραφείο του <span class="text-white font-medium">ΠΑΣΣΙΟΥ ΗΛΙΑ</span> στο Μεσολόγγι προσφέρει ολοκληρωμένες υπηρεσίες με έμφαση στην ακρίβεια και την εξατομικευμένη υποστήριξη.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="tel:2631028448" class="w-full sm:w-auto bg-brand-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-900/30">
+                    Καλέστε μας
+                </a>
+                <a href="#about" class="w-full sm:w-auto bg-white/5 text-white px-10 py-4 rounded-full font-bold text-lg border border-white/10 hover:bg-white/10 transition-all">
+                    Περισσότερα
+                </a>
+            </div>
+            
+            <div class="mt-16 flex items-center justify-center gap-4 text-slate-500 text-sm font-medium uppercase tracking-widest">
+                <span class="w-8 h-px bg-slate-800"></span>
+                <span>Μεσολόγγι Αιτωλοακαρνανίας</span>
+                <span class="w-8 h-px bg-slate-800"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-brand-primary font-bold uppercase tracking-[0.2em] text-sm mb-4">Υπηρεσίες</h2>
+                    <h3 class="text-4xl md:text-5xl font-display font-extrabold leading-tight tracking-tight">
+                        Ολοκληρωμένη Υποστήριξη <br> για κάθε Ανάγκη.
+                    </h3>
+                </div>
+                <p class="text-slate-500 text-lg font-light max-w-sm">
+                    Καλύπτουμε όλο το φάσμα των λογιστικών και φοροτεχνικών αναγκών για ιδιώτες και επιχειρήσεις.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-10 rounded-4xl border border-slate-100 hover:shadow-2xl hover:shadow-slate-200/50 transition-all group">
+                    <div class="w-14 h-14 bg-blue-50 text-brand-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text font-bold"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Φορολογικές Δηλώσεις</h4>
+                    <p class="text-slate-500 leading-relaxed font-light">
+                        Σύνταξη και υποβολή δηλώσεων εισοδήματος (Ε1, Ε2, Ε9) με απόλυτη ακρίβεια και υπευθυνότητα.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-10 rounded-4xl border border-slate-100 hover:shadow-2xl hover:shadow-slate-200/50 transition-all group">
+                    <div class="w-14 h-14 bg-blue-50 text-brand-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Τήρηση Βιβλίων</h4>
+                    <p class="text-slate-500 leading-relaxed font-light">
+                        Πλήρης λογιστική παρακολούθηση επιχειρήσεων όλων των κατηγοριών και μορφών (Ατομικές, ΙΚΕ, κλπ).
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-10 rounded-4xl border border-slate-100 hover:shadow-2xl hover:shadow-slate-200/50 transition-all group">
+                    <div class="w-14 h-14 bg-blue-50 text-brand-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-presentation"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Συμβουλευτικές Υπηρεσίες</h4>
+                    <p class="text-slate-500 leading-relaxed font-light">
+                        Στρατηγικός σχεδιασμός για την ανάπτυξη της επιχείρησής σας και βελτιστοποίηση των φορολογικών σας υποχρεώσεων.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Additional Services Banner -->
+            <div class="mt-12 bg-brand-dark p-12 rounded-4xl text-white relative overflow-hidden">
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">Χρειάζεστε κάτι πιο εξειδικευμένο;</h4>
+                        <p class="text-slate-400 font-light text-lg">Είμαστε εδώ για να συζητήσουμε κάθε ιδιαίτερη ανάγκη της επιχείρησής σας.</p>
+                    </div>
+                    <a href="tel:2631028448" class="bg-white text-brand-dark px-10 py-4 rounded-full font-bold hover:bg-brand-silver transition-all whitespace-nowrap">
+                        Άμεση Επικοινωνία
+                    </a>
+                </div>
+                <!-- Abstract visual element -->
+                <div class="absolute right-0 top-0 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 bg-white px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="relative">
+                <div class="rounded-4xl overflow-hidden aspect-[4/5] shadow-2xl relative z-10">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Σύγχρονο Λογιστικό Γραφείο" 
+                         class="w-full h-full object-cover grayscale-[0.3]"
+                         referrerPolicy="no-referrer">
+                </div>
+                <!-- Decorative Elements -->
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-brand-primary/5 rounded-4xl -z-0"></div>
+                <div class="absolute -top-10 -left-10 w-40 h-40 border border-slate-100 rounded-4xl -z-0"></div>
+            </div>
+
+            <div>
+                <h2 class="text-brand-primary font-bold uppercase tracking-[0.2em] text-sm mb-4">Το Γραφείο μας</h2>
+                <h3 class="text-4xl md:text-5xl font-display font-extrabold mb-8 leading-tight tracking-tight">
+                    Συνδυάζουμε την <span class="text-slate-400 font-light">Εμπειρία</span> με την <span class="text-brand-primary underline decoration-slate-200 underline-offset-8">Καινοτομία</span>.
+                </h3>
+                
+                <div class="space-y-6 text-slate-500 text-lg leading-relaxed font-light">
+                    <p>
+                        Το γραφείο του <span class="text-brand-dark font-semibold">Ηλία Πάσσιου</span> αποτελεί σημείο αναφοράς για τον τομέα των οικονομικών υπηρεσιών στο Μεσολόγγι. 
+                        Με πολυετή εμπειρία και άριστη γνώση του διαρκώς μεταβαλλόμενου φορολογικού περιβάλλοντος, προσφέρουμε λύσεις που εξασφαλίζουν την ηρεμία και την ανάπτυξη των πελατών μας.
+                    </p>
+                    <p>
+                        Η βαθμολογία <span class="text-brand-dark font-bold">5.0/5 στην Google</span> δεν είναι απλώς ένας αριθμός, αλλά η επιβεβαίωση της αφοσίωσής μας στην ποιότητα και τον απόλυτο σεβασμό προς τον πελάτη.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 mt-12 pt-12 border-t border-slate-100">
+                    <div>
+                        <div class="text-4xl font-display font-extrabold text-brand-dark mb-1">5.0</div>
+                        <div class="text-sm font-semibold uppercase tracking-widest text-slate-400">Google Score</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-display font-extrabold text-brand-dark mb-1">100%</div>
+                        <div class="text-sm font-semibold uppercase tracking-widest text-slate-400">Αξιοπιστία</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location / Contact Section -->
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-4xl overflow-hidden shadow-2xl shadow-slate-200">
+                <!-- Info Pane -->
+                <div class="p-10 md:p-16 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-brand-primary font-bold uppercase tracking-[0.2em] text-sm mb-4">Επικοινωνία</h2>
+                        <h3 class="text-4xl font-display font-extrabold mb-12 tracking-tight">Πώς θα μας <span class="text-slate-400">βρείτε</span>.</h3>
+                        
+                        <div class="space-y-10">
+                            <!-- Address -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-slate-50 text-brand-primary rounded-full flex items-center justify-center shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Διεύθυνση</h4>
+                                    <p class="text-slate-500 font-light">Καψάλη 6 (Αρεοπαγίτου Καψάλη Χρήστου),<br>302 00 Μεσολόγγι Αιτωλοακαρνανίας</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-slate-50 text-brand-primary rounded-full flex items-center justify-center shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
+                                </div>
+                                <div id="tel-box">
+                                    <h4 class="font-bold mb-2">Τηλέφωνο</h4>
+                                    <a href="tel:2631028448" class="text-slate-500 font-light hover:text-brand-primary transition-colors">26310 28448</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-12 border-t border-slate-100">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-sm font-semibold uppercase tracking-widest text-slate-400">Ανοιχτά καθημερινά (Πρωινές Ώρες)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Pane -->
+                <div class="h-[400px] lg:h-auto overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.5317765163353!2d21.4287!3d38.3683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135e69e4682c66df%3A0x6735e2365922337a!2zS2Fwc8OhbGkgNiwgTWVzb2xvbmdoaSAzMDIgMDA!5e0!3m2!1sen!2sgr!4v1713801625000!5m2!1sen!2sgr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark py-20 px-6 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 relative z-10">
+            <div>
+                <div class="font-display font-extrabold text-2xl tracking-tight mb-4">ΠΑΣΣΙΟΣ ΗΛΙΑΣ</div>
+                <p class="text-slate-400 font-light max-w-sm">
+                    Λογιστικές & Φοροτεχνικές Υπηρεσίες υψηλού επιπέδου με έδρα το Μεσολόγγι.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:items-end gap-6">
+                <div class="flex gap-8 text-sm font-semibold text-slate-400 uppercase tracking-widest">
+                    <a href="#services" class="hover:text-white transition-colors">Υπηρεσίες</a>
+                    <a href="#about" class="hover:text-white transition-colors">Το Γραφείο</a>
+                    <a href="#contact" class="hover:text-white transition-colors text-brand-primary">Επικοινωνία</a>
+                </div>
+                <div class="text-slate-500 text-xs">
+                    &copy; <span id="year"></span> ΠΑΣΣΙΟΣ ΗΛΙΑΣ. Όλα τα δικαιώματα κατοχυρωμένα.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle text background -->
+        <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 text-[15rem] font-display font-black text-white/5 whitespace-nowrap pointer-events-none select-none">
+            MESOLONGHI
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Reveal on scroll animation
+        const revealElements = document.querySelectorAll('section');
+        const revealOptions = {
+            threshold: 0.1
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-reveal');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+            revealObserver.observe(el);
+        });
+
+        // Custom Class for animation
+        const style = document.createElement('style');
+        style.textContent = `
+            .animate-reveal {
+                opacity: 1 !important;
+                transform: translateY(0) !important;
+            }
+            @keyframes fade-in {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in {
+                animation: fade-in 0.8s ease-out forwards;
+            }
+        `;
+        document.head.append(style);
+    </script>
+</body>
+</html>
